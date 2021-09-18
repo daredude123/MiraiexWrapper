@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: miraiexwrapper
+
+miraiexclient:
+  #public endpoints
+  baseurl: "https://api.miraiex.com"
+  time: "/time"
+  tradeablePairs: "/v2/markets"
+  specificMarketInfoPrefix: "/v2/markets/"
+  specificMarketHistorySuffix: "/history"
+  specificMarketOrderDepthsuffix: "/depth"
+  marketTicker: "/v2/markets/tickers"
+  specificMarketTickerSuffix: "/ticker"
+
+  #private endpoints and secrets
+  accountBalance: "/v2/balances"
+  depositAddresses: "/v2/deposit/address"
+  depositHistory: "/v2/deposit/history"
+
+  orderPrefix: "/v2/orders"
+  orderHistorySuffix: "/history"
+
+  tradeCostPercentage: "0.5"
