@@ -3,6 +3,7 @@ package com.andynordevelop.miraiexwrapper.client;
 import com.andynordevelop.miraiexwrapper.configuration.MiraiexClientConfiguration;
 import com.andynordevelop.miraiexwrapper.domain.*;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.common.base.Strings;
 import org.apache.commons.codec.binary.Hex;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,10 +24,15 @@ public class MiraiexPrivateClient {
 	private MiraiexClientConfiguration miraiexClientConfiguration;
 	Logger logger = LoggerFactory.getLogger(MiraiexPrivateClient.class);
 	@Autowired
-	public MiraiexPrivateClient(MiraiexClientConfiguration miraiexClientConfiguration) {
-		
+	public MiraiexPrivateClient(MiraiexClientConfiguration miraiexClientConfiguration) throws Exception {
+
 		this.miraiexClientConfiguration = miraiexClientConfiguration;
 		restTemplate = new RestTemplate();
+		if (Strings.isNullOrEmpty(miraiexClientConfiguration.getApiKey()) ||
+				Strings.isNullOrEmpty(miraiexClientConfiguration.getClientId()) ||
+				Strings.isNullOrEmpty(miraiexClientConfiguration.getSecretKey())) {
+			throw new Exception("Need to set api, clientid, or secret key");
+		}
 	}
 	
 	public MiraiexAccountBalance[] getMiraiExAccountBalance() throws Exception {
