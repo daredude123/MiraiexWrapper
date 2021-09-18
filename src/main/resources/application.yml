@@ -13,6 +13,10 @@ miraiexclient:
   marketTicker: "/v2/markets/tickers"
   specificMarketTickerSuffix: "/ticker"
 
+  apiKey: "SET API KEY"
+  clientId: "SET CLIENT ID"
+  secretKey: "SET KEY HERE"
+
   #private endpoints and secrets
   accountBalance: "/v2/balances"
   depositAddresses: "/v2/deposit/address"

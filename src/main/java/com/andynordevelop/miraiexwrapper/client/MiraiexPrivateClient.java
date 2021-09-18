@@ -28,11 +28,6 @@ public class MiraiexPrivateClient {
 
 		this.miraiexClientConfiguration = miraiexClientConfiguration;
 		restTemplate = new RestTemplate();
-		if (Strings.isNullOrEmpty(miraiexClientConfiguration.getApiKey()) ||
-				Strings.isNullOrEmpty(miraiexClientConfiguration.getClientId()) ||
-				Strings.isNullOrEmpty(miraiexClientConfiguration.getSecretKey())) {
-			throw new Exception("Need to set api, clientid, or secret key");
-		}
 	}
 	
 	public MiraiexAccountBalance[] getMiraiExAccountBalance() throws Exception {
