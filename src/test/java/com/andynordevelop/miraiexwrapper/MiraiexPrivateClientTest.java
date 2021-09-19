@@ -13,6 +13,7 @@ import org.springframework.util.Assert;
 import java.time.Duration;
 import java.time.LocalDateTime;
 
+
 @SpringBootTest
 public class MiraiexPrivateClientTest {
 
