@@ -12,6 +12,7 @@
 	<artifactId>miraiexwrapper</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>miraiexwrapper</name>
+	<packaging>jar</packaging>
 	<description>Wrapper for Miraiex API</description>
 	<properties>
 		<java.version>11</java.version>
@@ -34,7 +35,6 @@
 			<artifactId>commons-codec</artifactId>
 			<version>1.15</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
 		<dependency>
 			<groupId>com.google.guava</groupId>
 			<artifactId>guava</artifactId>
