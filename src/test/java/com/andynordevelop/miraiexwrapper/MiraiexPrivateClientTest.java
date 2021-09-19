@@ -2,18 +2,24 @@ package com.andynordevelop.miraiexwrapper;
 
 
 
+import java.time.Duration;
+import java.time.LocalDateTime;
+
 import com.andynordevelop.miraiexwrapper.client.MiraiexPrivateClient;
 import com.andynordevelop.miraiexwrapper.configuration.MiraiexClientConfiguration;
-import com.andynordevelop.miraiexwrapper.domain.*;
+import com.andynordevelop.miraiexwrapper.domain.MiraiexAccountBalance;
+import com.andynordevelop.miraiexwrapper.domain.MiraiexDepositAddress;
+import com.andynordevelop.miraiexwrapper.domain.MiraiexDepositHistory;
+import com.andynordevelop.miraiexwrapper.domain.MiraiexOrder;
+import com.andynordevelop.miraiexwrapper.domain.MiraiexPairEnum;
+
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.util.Assert;
 
-import java.time.Duration;
-import java.time.LocalDateTime;
-
-
+@Disabled
 @SpringBootTest
 public class MiraiexPrivateClientTest {
 
