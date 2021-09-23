@@ -1,7 +1,5 @@
 package com.andynordevelop.miraiexwrapper;
 
-
-
 import java.time.Duration;
 import java.time.LocalDateTime;
 

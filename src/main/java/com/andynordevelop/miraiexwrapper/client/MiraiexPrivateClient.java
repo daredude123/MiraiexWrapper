@@ -3,7 +3,6 @@ package com.andynordevelop.miraiexwrapper.client;
 import com.andynordevelop.miraiexwrapper.configuration.MiraiexClientConfiguration;
 import com.andynordevelop.miraiexwrapper.domain.*;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.google.common.base.Strings;
 import org.apache.commons.codec.binary.Hex;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
