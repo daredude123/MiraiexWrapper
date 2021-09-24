@@ -1,6 +1,5 @@
 package com.andynordevelop.miraiexwrapper.client;
 
-import com.andynordevelop.miraiexwrapper.configuration.MiraiexClientConfiguration;
 import com.andynordevelop.miraiexwrapper.domain.*;
 import com.google.common.base.Strings;
 import org.springframework.beans.factory.annotation.Autowired;
